@@ -2,4 +2,7 @@
 	"name": "foo",
 	"version": "1.0.0",
 	"description": "Paquete de prueba"
+	"requires": [
+		"console_manager"
+	]
 }
