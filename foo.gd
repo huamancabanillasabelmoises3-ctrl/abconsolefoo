@@ -5,7 +5,8 @@ var cnsl : ConsoleManager
 
 func _receive_package_data(data : Dictionary) -> bool:
     if not data:
-        print("Can't get data package from foo package")
+        print("Can't get data package\
+ from foo package")
         return false
     var pkg_data = data
     cnsl = pkg_data.console_manager
@@ -19,3 +20,5 @@ func _get_command() -> Dictionary:
         }
     }
 
+func _package_ready() -> void:
+    print("si funciona wey")
